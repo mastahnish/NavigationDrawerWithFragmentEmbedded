@@ -13,11 +13,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class PlusOneFragment extends Fragment {
+public class DrawerFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public PlusOneFragment() {
+    public DrawerFragment() {
 
     }
 

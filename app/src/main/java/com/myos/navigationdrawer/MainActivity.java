@@ -16,7 +16,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements PlusOneFragment.OnFragmentInteractionListener, PageFragment.OnFragmentInteractionListener
+public class MainActivity extends AppCompatActivity implements DrawerFragment.OnFragmentInteractionListener, PageFragment.OnFragmentInteractionListener
        /* implements NavigationView.OnNavigationItemSelectedListener */{
     DrawerLayout drawer;
     @Override
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements PlusOneFragment.O
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        PlusOneFragment fragment = new PlusOneFragment();
+        DrawerFragment fragment = new DrawerFragment();
         getSupportFragmentManager().beginTransaction().replace(R.id.fl_fragment, fragment).addToBackStack(null).commit();
     }
 
